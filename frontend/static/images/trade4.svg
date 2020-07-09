@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="136" viewBox="0 0 136 136">
+    <defs>
+        <style>
+            .prefix__cls-4{fill:#2196f3}
+        </style>
+    </defs>
+    <g id="prefix__Group_91" data-name="Group 91" transform="translate(-948 -811)">
+        <circle id="prefix__Ellipse_19" cx="68" cy="68" r="68" fill="#9fe1ff" data-name="Ellipse 19" transform="translate(948 811)"/>
+        <g id="prefix__Group_90" data-name="Group 90">
+            <g id="prefix__mail_1_" data-name="mail (1)" transform="translate(976 766.667)">
+                <path id="prefix__Path_365" fill="#1e88e5" d="M88.276 269.87a8.308 8.308 0 0 1-6.381 2.991h-63.14a8.308 8.308 0 0 1-6.381-2.991l30.474-25.389 3.152 2.16a7.607 7.607 0 0 0 8.64 0l3.157-2.16z" data-name="Path 365" transform="translate(-10.446 -134.357)"/>
+                <path id="prefix__Path_366" fill="#64b5f6" d="M86.22 88.956l-30.939 21.168-3.157 2.16a7.607 7.607 0 0 1-8.64 0l-3.157-2.16L9.388 88.922a8.344 8.344 0 0 1 6.846-3.589h63.14a8.2 8.2 0 0 1 6.846 3.623z" data-name="Path 366" transform="translate(-7.926)"/>
+                <g id="prefix__Group_85" data-name="Group 85" transform="translate(0 88.923)">
+                    <path id="prefix__Path_367" d="M32.4 129.577L1.928 154.966A8.271 8.271 0 0 1 0 149.649v-36.555a8.188 8.188 0 0 1 1.462-4.719z" class="prefix__cls-4" data-name="Path 367" transform="translate(0 -108.375)"/>
+                    <path id="prefix__Path_368" d="M336.4 113.274v36.555a8.272 8.272 0 0 1-1.927 5.317L304 129.757l30.939-21.169a8.16 8.16 0 0 1 1.461 4.686z" class="prefix__cls-4" data-name="Path 368" transform="translate(-256.646 -108.555)"/>
+                </g>
+                <g id="prefix__Group_87" data-name="Group 87" transform="translate(-1.222 82.333) translate(30.518 18.097)">
+                    <circle id="prefix__Ellipse_20" cx="10.592" cy="10.592" r="10.592" fill="#ff3c21" data-name="Ellipse 20"/>
+                    <path id="prefix__Path_364" fill="#f22408" d="M10.592 0a10.592 10.592 0 0 1 0 21.184c-5.85 0 6.408 0 6.408-10.592S4.742 0 10.592 0z" data-name="Path 364"/>
+                </g>
+            </g>
+            <g id="prefix__Group_89" data-name="Group 89">
+                <g id="prefix__Ellipse_24" fill="#fff" stroke="#707070" data-name="Ellipse 24" transform="translate(1041 843)">
+                    <circle cx="12" cy="12" r="12" stroke="none"/>
+                    <circle cx="12" cy="12" r="11.5" fill="none"/>
+                </g>
+                <text id="prefix___2" fill="#606060" data-name="2" font-family="Raleway-Regular, Raleway" font-size="20px" transform="translate(1048 861)">
+                    <tspan x="0" y="0">2</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#606060}
+        </style>
+    </defs>
+    <g id="prefix__Group_150" data-name="Group 150" transform="translate(-773 -1619)">
+        <path id="prefix__Icon" fill="#aaa" d="M36.842 0H3.158A3.158 3.158 0 0 0 0 3.158v33.684A3.158 3.158 0 0 0 3.158 40h33.684A3.158 3.158 0 0 0 40 36.842V3.158A3.158 3.158 0 0 0 36.842 0z" transform="translate(773 1619)"/>
+        <g id="prefix__book" transform="translate(714.02 1630)">
+            <path id="prefix__Path_404" d="M84.694 0H74.38A2.383 2.383 0 0 0 72 2.38v13.488a2.6 2.6 0 0 0 2.6 2.6h10.1a.577.577 0 0 0 0-1.154H74.6a1.443 1.443 0 0 1 0-2.885h10.1a.577.577 0 0 0 .577-.577V.577A.577.577 0 0 0 84.694 0zm-11.54 13.4V2.38a1.226 1.226 0 0 1 1.226-1.226h.036a.18.18 0 0 1 .18.18V13.1a.179.179 0 0 1-.167.18 2.577 2.577 0 0 0-1.015.28.18.18 0 0 1-.26-.16z" class="prefix__cls-2" data-name="Path 404"/>
+            <path id="prefix__Path_405" d="M138.675 424h-10.1a.577.577 0 0 0 0 1.154h10.1a.577.577 0 1 0 0-1.154z" class="prefix__cls-2" data-name="Path 405" transform="translate(-53.98 -408.709)"/>
+        </g>
+    </g>
+</svg>

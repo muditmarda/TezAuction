@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= require('html-loader!../partials/header.html') %>
+
+  <body class="inside">
+    <div class="notFound thanos-banner">
+      Thanos Wallet not available. Install from
+      <a href="https://thanoswallet.com/download/">here</a>
+      and enable dApp interaction in wallet settings
+    </div>
+    <!-- wrp -->
+    <div class="wrp">
+      <!-- right panel -->
+      <%= require('html-loader!../partials/auctionpanel.html') %>
+      <!-- right panel -->
+
+      <!-- header start -->
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="logo">
+                <a href="/">
+                  <img src="/images/logo.svg" alt="logo" />
+                </a>
+              </div>
+
+              <div class="conectd">
+                <span id="thanos-status">No wallet connected</span>
+                <div class="dropTip">
+                  <p id="droptip-text">
+                    Looks like you don’t have a wallet yet. Click on the top to
+                    create Thanos wallet
+                  </p>
+                </div>
+              </div>
+
+              <div class="menuBox">
+                <ul>
+                  <li id="prodct" class="">
+                    <a href="#">Auction your product</a>
+                  </li>
+                  <li class="active">
+                    <a href="viewauctions.html">View Auctions</a>
+                  </li>
+                  <li><a href="#">My Auction</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- cardBox -->
+      <section class="cardBox">
+        <div class="container">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#Upcoming"
+                ><span> Upcoming </span><i id="upcoming-count">0</i></a
+              >
+            </li>
+            <li class="">
+              <a data-toggle="tab" href="#Ongoing"
+                ><span> Ongoing </span><i id="ongoing-count">0</i></a
+              >
+            </li>
+            <li>
+              <a data-toggle="tab" href="#Completed"
+                ><span> Completed </span><i id="completed-count">0</i></a
+              >
+            </li>
+          </ul>
+
+          <!-- toggle -->
+          <div class="swtchSec">
+            <div class="switchBtn">
+              <span class="sw-lt">Buyer</span>
+              <span class="sw-mid">All</span>
+              <span class="sw-rt">Seller</span>
+              <div class="plate">
+                <i></i>
+                <a href="javascript:void(0)" id="buyr"></a>
+                <a href="javascript:void(0)" id="allFiltr"></a>
+                <a href="javascript:void(0)" id="sellr"></a>
+              </div>
+            </div>
+          </div>
+          <!-- toggle -->
+
+          <div class="tab-content">
+            <div id="Upcoming" class="tab-pane fade in active">
+              <div id="upcoming-list"></div>
+            </div>
+
+            <div id="Ongoing" class="tab-pane fade">
+              <div id="ongoing-list"></div>
+            </div>
+
+            <div id="Completed" class="tab-pane fade">
+              <div id="completed-list"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- cardBox -->
+
+      <div class="comnPopup">
+        <!-- timer -->
+        <div class="countDown">
+          <h2>Time Left</h2>
+
+          <div id="timer">
+            <div id="hours"></div>
+            <div id="minutes"></div>
+            <div id="seconds"></div>
+          </div>
+
+          <h3>Bid Amount</h3>
+
+          <h4>Tezos Balance</h4>
+          <div class="blnc">
+            <span>10,00,000</span>
+          </div>
+
+          <button type="button" class="bidDone">Bid Now</button>
+        </div>
+        <!-- timer -->
+
+        <!-- Good luck -->
+        <div class="gudlk">
+          <lottie-player
+            class="sending"
+            src="script/Paperplane.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px;"
+            loop
+            autoplay
+          ></lottie-player>
+
+          <h2>Good Luck!</h2>
+          <h3>Placing your bid to the cloud</h3>
+        </div>
+        <!-- Good luck -->
+
+        <!-- bid done -->
+        <div class="finisfBid">
+          <lottie-player
+            class="sending"
+            src="script/Tick.json"
+            background="transparent"
+            speed="1"
+            style="width: 150px; height: 150px;"
+            loop
+            autoplay
+          ></lottie-player>
+
+          <button>Done</button>
+        </div>
+        <!-- bid done -->
+      </div>
+    </div>
+
+    <%= require('html-loader!../partials/footer.html') %>
+    <!-- wrp -->
+
+    <script src="/script/jquery.min.js"></script>
+    <script src="/script/bootstrap.min.js"></script>
+    <script src="/script/animations.js"></script>
+    <script src="/script/jquery-ui.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="/script/materialize.min.js"></script>
+    <script src="script/jquery.slimscroll.js"></script>
+    <script src="/script/lottie-player.js"></script>
+    <script src="/script/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="159.997" height="43.139" viewBox="0 0 159.997 43.139">
+    <defs>
+        <style>
+            .prefix__cls-4{fill:#aaa}.prefix__cls-6{fill:#d3d3d3}
+        </style>
+    </defs>
+    <g id="prefix__Artboard" transform="translate(-22 -19.617)">
+        <text id="prefix__DexAuction" fill="#aaa" font-family="CenturyGothic, Century Gothic" font-size="21px" transform="translate(62.997 51.225)">
+            <tspan x="0" y="0">Dex</tspan><tspan y="0" font-family="CenturyGothic-Bold, Century Gothic" font-weight="700">Auction</tspan>
+        </text>
+        <g id="prefix__Group-3" transform="translate(22 24.5)">
+            <circle id="prefix__Oval" cx="17.942" cy="17.942" r="17.942" fill="#6f6f6f" transform="translate(0 2.372)"/>
+            <g id="prefix__Group-2" transform="translate(14.774 32.346)">
+                <path id="prefix__Path" d="M17.989 1.241c-.07.063-.14.125-.211.186q-.391.338-.8.654a18.4 18.4 0 0 1-2.82 1.794H5.7a1.47 1.47 0 0 1-1.47-1.47v-.934a.4.4 0 0 1 0-.042A1.469 1.469 0 0 1 5.7 0h10.838a1.468 1.468 0 0 1 1.451 1.241z" class="prefix__cls-4" transform="translate(-2.668)"/>
+                <path id="prefix__Path-2" fill="#606060" d="M17.777 3.864q-.391.338-.8.654a18.4 18.4 0 0 1-2.82 1.794H5.7a1.47 1.47 0 0 1-1.47-1.47v-.934a.4.4 0 0 1 0-.042h13.547z" data-name="Path" transform="translate(-2.668 -2.437)"/>
+                <path id="prefix__Path-3" d="M14.309 5.635A18.332 18.332 0 0 1 3.068 9.463 18.5 18.5 0 0 1 .9 9.336 1.628 1.628 0 0 1 0 7.881v-.618a1.628 1.628 0 0 1 1.629-1.628z" class="prefix__cls-4" data-name="Path" transform="translate(0 -3.554)"/>
+            </g>
+            <g id="prefix__Group" transform="translate(.335 -4.883)">
+                <path id="prefix__Path-4" d="M16.75 44.209l-.382 3.547-1.133 1.266-1.315 1.47-1.243 1.387-1.315 1.47-7.774 8.586C2.159 59.886.632 58.415 0 55.987l7.385-6.616 1.47-1.315 1.388-1.242 1.47-1.315 1.266-1.133z" class="prefix__cls-4" data-name="Path" transform="translate(0 -25.364)"/>
+                <path id="prefix__Path-5" d="M18.249 47.715a1.914 1.914 0 0 1 2.707 0l3.9 3.9a1.914 1.914 0 0 1-2.707 2.707l-3.9-3.9a1.914 1.914 0 0 1 0-2.707z" class="prefix__cls-4" data-name="Path" transform="translate(-10.149 -27.054)"/>
+                <ellipse id="prefix__Oval-2" cx="9.372" cy="7.283" class="prefix__cls-6" data-name="Oval" rx="9.372" ry="7.283" transform="rotate(-45 24.872 -.605)"/>
+                <g id="prefix__Path-6" data-name="Path" transform="translate(3.561)">
+                    <path id="prefix__Path_394" d="M10.638 19.526a2.066 2.066 0 0 0-1.976-1.976l8.828-8.828a2.066 2.066 0 0 0 1.975 1.978" class="prefix__cls-6" data-name="Path 394" transform="translate(-5.002 -5.004)"/>
+                    <path id="prefix__Path_395" d="M12.172 23.336l-1.224-1.224a1.386 1.386 0 0 1 0-1.961l9.28-9.28a1.386 1.386 0 0 1 1.961 0l1.223 1.229a1.386 1.386 0 0 1 0 1.961l-9.28 9.28a1.386 1.386 0 0 1-1.96-.005z" class="prefix__cls-4" data-name="Path 395" transform="translate(-6.08 -6.004)"/>
+                    <path id="prefix__Path_396" d="M1.452 12.617l-.742-.743a2.166 2.166 0 0 1-.266-2.737A31.96 31.96 0 0 1 9.213.367a2.166 2.166 0 0 1 2.738.266l.743.743q.034.034.067.07a2.153 2.153 0 0 1-.1 2.965l-8.174 8.174a2.153 2.153 0 0 1-2.965.1l-.07-.068z" class="prefix__cls-4" data-name="Path 396" transform="translate(-.076)"/>
+                    <g id="prefix__Group_148" data-name="Group 148" transform="translate(0 5.017)">
+                        <path id="prefix__Path_399" d="M40.763 38.017a2.066 2.066 0 0 1 1.976 1.976l8.828-8.828a2.066 2.066 0 0 1-1.976-1.976" class="prefix__cls-6" data-name="Path 399" transform="translate(-23.42 -16.805)"/>
+                    </g>
+                    <path id="prefix__Path_400" d="M33.624 44.788l1.224 1.224a1.386 1.386 0 0 0 1.961 0l9.28-9.28a1.386 1.386 0 0 0 0-1.961l-1.224-1.224a1.386 1.386 0 0 0-1.961 0l-9.28 9.28a1.386 1.386 0 0 0 0 1.961z" class="prefix__cls-4" data-name="Path 400" transform="translate(-19.091 -19.014)"/>
+                    <path id="prefix__Path_401" d="M44.408 55.573l.743.743a2.166 2.166 0 0 0 2.738.266 31.961 31.961 0 0 0 8.769-8.769 2.166 2.166 0 0 0-.266-2.738l-.743-.743q-.034-.034-.07-.067a2.153 2.153 0 0 0-2.965.1l-8.174 8.173a2.153 2.153 0 0 0-.1 2.965l.067.07z" class="prefix__cls-4" data-name="Path 401" transform="translate(-25.16 -25.084)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

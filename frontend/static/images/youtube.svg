@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__Layer_2" width="40" height="40" data-name="Layer 2" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#aaa}
+        </style>
+    </defs>
+    <g id="prefix__Black_Icon" data-name="Black Icon">
+        <g id="prefix___02_YouTube" data-name="02.YouTube">
+            <path id="prefix__Shape_02" d="M65.46 63.74l5.783 3.371-5.783 3.355z" class="prefix__cls-1" data-name="Shape 02" transform="translate(-48.351 -47.103)"/>
+            <path id="prefix__Shape_01" d="M36.842 0H3.158A3.158 3.158 0 0 0 0 3.158v33.684A3.158 3.158 0 0 0 3.158 40h33.684A3.158 3.158 0 0 0 40 36.842V3.158A3.158 3.158 0 0 0 36.842 0zm-6.316 23.539a3.982 3.982 0 0 1-3.982 3.984H13.455a3.982 3.982 0 0 1-3.982-3.984v-7.078a3.982 3.982 0 0 1 3.982-3.984h13.09a3.982 3.982 0 0 1 3.982 3.984z" class="prefix__cls-1" data-name="Shape 01"/>
+        </g>
+    </g>
+</svg>

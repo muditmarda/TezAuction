@@ -1,0 +1,338 @@
+<!-- right panel -->
+<div class="slidePanel">
+  <span class="closePanel"
+    ><img src="/images/close-icon.png" alt="close-panel"
+  /></span>
+  <div class="tabHead">
+    <h2>Three Simple Steps to upload your auction</h2>
+
+    <div class="tabMenu">
+      <ul>
+        <li class="active one bold">
+          <a data-tab="one" href="javascript:void(0)">Product Details</a>
+        </li>
+        <li class="two">
+          <a data-tab="two" href="javascript:void(0)">Type of Auction</a>
+        </li>
+        <li class="three">
+          <a data-tab="three" href="javascript:void(0)">Auction details</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tabContnt">
+    <!-- tab 1 -->
+    <div class="comnTab active" id="one">
+      <div class="aucPro">
+        <form
+          id="auction-details-form"
+          action="http://54.172.0.221:8080/update-auction-details"
+          class="inptForm"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="testDiv">
+            <div class="input-group">
+              <div class="form-group" id="aucProParent">
+                <label class="form-label" for="auctnProdct"
+                  >Name of the Auction Product</label
+                >
+                <input
+                  id="auctnProdct"
+                  name="assetName"
+                  class="form-input focus"
+                  type="text"
+                  required
+                />
+              </div>
+              <span class="aucPro error">Required field</span>
+            </div>
+
+            <div class="input-group txtara">
+              <label for="name"></label>
+              <textarea
+                class="focus"
+                rows="1"
+                name="description"
+                id="assetDescription"
+                placeholder="Description of the Product"
+                required
+              ></textarea>
+            </div>
+
+            <div class="fileUpld">
+              <h4>Drag & Drop Image</h4>
+              <span>or</span>
+              <cite>Browse Image</cite>
+              <input type="file" name="image" id="myFile" />
+            </div>
+            <span id="fileError"></span>
+          </div>
+
+          <input type="text" name="assetId" id="assetId" hidden />
+          <input type="text" name="auctionType" id="auctionType" hidden />
+          <input type="text" name="startTime" id="startTime" hidden />
+          <input type="text" name="waitTime" id="waitTime" hidden />
+          <input type="text" name="auctionParams" id="auctionParams" hidden />
+          <input type="text" name="userPubKey" id="userPubKey" hidden />
+          <input
+            type="text"
+            name="contractAddress"
+            id="contractAddress"
+            hidden
+          />
+
+          <input type="button" class="sbmt first" value="Next" />
+        </form>
+      </div>
+    </div>
+    <!-- tab 1 -->
+
+    <!-- tab 2 -->
+    <div class="comnTab" id="two">
+      <div class="acc">
+        <div class="acc__card">
+          <div class="acc__title">
+            <span>English Auction</span><cite class="slctd">Selected</cite>
+          </div>
+          <div class="acc__panel">
+            <p>
+              An ascending price auction where the bid price keeps increasing
+              starting from a reserve price till no bidder can match the highest
+              standing bid.
+            </p>
+            <label class="checkCntr">
+              <input type="button" />
+              <span class="checkmark" onclick="setAuctionType('english')"
+                >Choose English Auction</span
+              >
+            </label>
+          </div>
+        </div>
+
+        <div class="acc__card">
+          <div class="acc__title">
+            <span>Dutch Auction</span> <cite class="slctd">Selected</cite>
+          </div>
+          <div class="acc__panel">
+            <p>
+              A descending price auction which begins with a high asking price
+              which decreases until one bidder is willing to pay the quoted
+              price
+            </p>
+            <label class="checkCntr">
+              <input type="button" />
+              <span class="checkmark" onclick="setAuctionType('dutch')"
+                >Choose Dutch Auction</span
+              >
+            </label>
+          </div>
+        </div>
+
+        <div class="acc__card">
+          <div class="acc__title">
+            <span>Sealed Bid</span> <cite class="slctd">Selected</cite>
+          </div>
+          <div class="acc__panel">
+            <p>
+              A sealed bid first price auction, where bidders submit sealed bids
+              and the highest bidder wins and pays his bid.
+            </p>
+            <label class="checkCntr">
+              <input type="button" />
+              <span class="checkmark" onclick="setAuctionType('sealed bid')"
+                >Choose Sealed Bid Auction</span
+              >
+            </label>
+          </div>
+        </div>
+
+        <div class="acc__card">
+          <div class="acc__title">
+            <span>Vickrey</span> <cite class="slctd">Selected</cite>
+          </div>
+          <div class="acc__panel">
+            <p>
+              An sealed bid second price auction where bidders submit sealed
+              bids and the highest bidder wins and pays the amount of the second
+              highest bid.
+            </p>
+            <label class="checkCntr">
+              <input type="button" />
+              <span class="checkmark" onclick="setAuctionType('vickery')"
+                >Choose Vickery Auction</span
+              >
+            </label>
+          </div>
+        </div>
+
+        <input
+          type="button"
+          id="chooseAuctionBtn"
+          class="sbmt scnd"
+          value="Next"
+          onclick="chooseAuction()"
+        />
+      </div>
+
+      <div class="ldngAuctn">
+        <lottie-player
+          class="lottie"
+          src="script/lf30_editor_lCQXDf.json"
+          background="transparent"
+          speed="1"
+          style="width: 200px; height: 200px;"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="txt">
+          <h2>Take a Sip!</h2>
+          <p>while we're creating your auction house in background</p>
+        </div>
+      </div>
+
+      <div class="creatdAuctn">
+        <h3>Operation Hash generated</h3>
+        <span id="chooseAuctionResult">54d8asd48as5d4as8d5a4d8asd</span>
+        <span id="chooseAuctionError"></span>
+      </div>
+    </div>
+    <!-- tab 2 -->
+
+    <!-- tab 3 -->
+    <div class="comnTab" id="three">
+      <div class="aucPro">
+        <form action="" class="inptForm">
+          <h3 id="tab3-auction-type">English Auction</h3>
+
+          <div class="input-group">
+            <div class="form-group">
+              <input
+                class="form-input focus requFild"
+                placeholder="Reserve Price (in XTZ)"
+                name="reservePrice"
+                id="reservePrice"
+                type="number"
+                required
+              />
+              <i class="toolTp"
+                >i<span id="fieldInfoTooltip1">Opening price</span></i
+              >
+            </div>
+            <span class="Reserve error">Required field</span>
+          </div>
+
+          <div id="secondAuctionDetailField" class="input-group">
+            <div class="form-group">
+              <input
+                type="number"
+                name="increment"
+                id="increment"
+                class="form-input focus requFild"
+                placeholder="Minimum Increment (in XTZ)"
+                type="text"
+                required
+              />
+              <i class="toolTp"
+                >i<span id="fieldInfoTooltip2"
+                  >Minimum increase per bid</span
+                ></i
+              >
+            </div>
+            <span class="Increment error">Required field</span>
+          </div>
+
+          <div class="input-group">
+            <div class="form-group">
+              <input
+                id="datepicker"
+                class="form-input focus requFild"
+                placeholder="Start Date"
+                type="text"
+                required
+              />
+              <i class="toolTp">i<span>Auction start date</span></i>
+            </div>
+            <span class="Date error">Required field</span>
+          </div>
+
+          <div class="input-group">
+            <div class="form-group">
+              <input
+                id="timepicker"
+                class="form-input focus requFild timepicker"
+                placeholder="Start Time"
+                type="text"
+                required
+              />
+              <i class="toolTp">i<span>Auction start time</span></i>
+            </div>
+            <span class="Time error">Required field</span>
+          </div>
+
+          <div class="input-group round">
+            <label for="name">Round Duration</label>
+            <input
+              type="text"
+              class="focus"
+              name="waithour"
+              id="waithour"
+              placeholder="H"
+              defaultValue="00"
+            />
+            <span>:</span>
+            <input
+              type="text"
+              class="focus"
+              name="waitmin"
+              id="waitmin"
+              placeholder="M"
+              defaultValue="00"
+            />
+          </div>
+
+          <input type="button" class="sbmt cancel" value="Cancel" />
+
+          <input
+            type="button"
+            class="sbmt finish"
+            id="configureAuctionBtn"
+            value="Finish"
+            onclick="configureAuction()"
+          />
+        </form>
+      </div>
+
+      <div class="wrenchBox">
+        <lottie-player
+          class="wrench"
+          src="/script/Wrench.json"
+          background="transparent"
+          speed="1"
+          style="width: 200px; height: 200px;"
+          loop
+          autoplay
+        ></lottie-player>
+
+        <input type="button" class="sbmt" id="cnl" value="Cancel" />
+      </div>
+
+      <div class="procesComplete">
+        <lottie-player
+          class="wrench"
+          src="/script/Tick.json"
+          background="transparent"
+          speed="1"
+          style="width: 200px; height: 200px;"
+          loop
+          autoplay
+        ></lottie-player>
+
+        <input type="button" class="sbmt" id="Posted" value="Posted" />
+      </div>
+    </div>
+    <!-- tab 3 -->
+  </div>
+</div>
+<!-- right panel -->

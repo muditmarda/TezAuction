@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144.373" height="136" viewBox="0 0 144.373 136">
+    <g id="prefix__Group_99" data-name="Group 99" transform="translate(-448 -811)">
+        <circle id="prefix__Ellipse_23" cx="68" cy="68" r="68" fill="#ffd8ad" data-name="Ellipse 23" transform="translate(448 811)"/>
+        <g id="prefix__Group_88" data-name="Group 88" transform="rotate(16 -2670.27 2142.836)">
+            <path id="prefix__Path_387" fill="#e5646e" d="M114.711 120.024s-3.159-9.657-7.307-16.032a74.1 74.1 0 0 0-10.265-12.271S31.5 87.752 9.84 90.9s-2.691 2.514-2.691 2.514l.518 1.805v24.808l3.63 5.837h98.156z" data-name="Path 387" transform="translate(-5.635 -90.839)"/>
+            <path id="prefix__Path_388" fill="#db4655" d="M0 95.217v24.808l4.378 3.892V90.839A4.378 4.378 0 0 0 0 95.217z" data-name="Path 388" transform="translate(0 -90.839)"/>
+            <path id="prefix__Path_389" fill="#5055a0" d="M7.817 294.869v22.909c0 2.418 1.58 4.378 3.528 4.378l97.086-1.421a44.421 44.421 0 0 0 5.263-10.669c1.894-5.893 3.219-12.576 3.219-12.576l-6.7-8.458H11.439z" data-name="Path 389" transform="translate(-5.745 -236.498)"/>
+            <path id="prefix__Path_390" fill="#3f3f8f" d="M3.537 311.939v-15.566L0 300.264v24.808c0 2.418 1.584 4.378 3.537 4.378l95.569.968c1.953 0 2.257-1.782 3.9-4.749l-88.855-.6c-5.86 0-10.611-5.88-10.611-13.133z" data-name="Path 390" transform="translate(0 -241.893)"/>
+            <path id="prefix__Path_391" fill="#f2f2f6" d="M8.667 226.406l1.673 3.725 107.239 2.6a131.721 131.721 0 0 0 .759-13.731c0-7.3-2.376-18.054-2.376-18.054H10.34l-1.673 4.609z" data-name="Path 391" transform="translate(-6.37 -171.761)"/>
+            <path id="prefix__Path_392" fill="#e1e1e6" d="M0 200.946h4.378v29.185H0z" data-name="Path 392" transform="translate(0 -171.761)"/>
+            <g id="prefix__Group_109" data-name="Group 109" transform="rotate(-16 -3.172 134.601)">
+                <path id="prefix__Path_385" fill="#ac825a" d="M61.345 3.919a3.911 3.911 0 0 1-.137 1.02l-.17.632-27.084 101.081q-1.536-2.079-2.912-4.277-1.478-2.36-2.76-4.851l23.275-86.863 2.078-7.754a3.922 3.922 0 0 1 7.71 1.012zm0 0" data-name="Path 385" transform="translate(-22.702)"/>
+                <path id="prefix__Path_386" fill="#816244" d="M58.438.134l-2.063 7.7-25.334 94.541q-1.478-2.36-2.76-4.851l23.276-86.863 2.078-7.754a3.922 3.922 0 0 1 4.8-2.773zm0 0" data-name="Path 386" transform="translate(-22.702)"/>
+            </g>
+        </g>
+    </g>
+</svg>

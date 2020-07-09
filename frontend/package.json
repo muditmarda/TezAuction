@@ -1,0 +1,44 @@
+{
+  "name": "dex-auction",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "postbuild": "cp -R static/images dist && cp -R static/style dist && cp -R static/script dist && cp static/favicon.ico dist",
+    "build": "webpack --config webpack.prod.js --mode production && npm run postbuild",
+    "start": "http-server dist --port ${PORT:-80}"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.5.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "standard": "^14.3.4",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.4",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "@taquito/taquito": "^6.3.2-beta.0",
+    "@thanos-wallet/dapp": "^0.4.4",
+    "axios": "^0.19.2",
+    "bignumber.js": "^9.0.0",
+    "dayjs": "^1.8.28",
+    "http-server": "^0.12.3"
+  }
+}

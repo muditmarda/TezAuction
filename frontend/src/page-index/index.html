@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= require('html-loader!../partials/header.html') %>
+
+  <body class="">
+    <div class="notFound thanos-banner">
+      Thanos Wallet not available. Install from
+      <a href="https://thanoswallet.com/download/">here</a>
+      and enable dApp interaction in wallet settings
+    </div>
+
+    <!-- wrp -->
+    <div class="wrp">
+      <!-- right panel -->
+      <%= require('html-loader!../partials/auctionpanel.html') %>
+      <!-- right panel -->
+
+      <!-- header start -->
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="logo">
+                <a href="/">
+                  <img src="/images/logo.svg" alt="site-logo" />
+                </a>
+              </div>
+
+              <div class="conectd">
+                <span id="thanos-status">No wallet connected</span>
+                <div class="dropTip">
+                  <p id="droptip-text">
+                    Looks like you don’t have a wallet yet. Click on the top to
+                    create Thanos wallet
+                  </p>
+                </div>
+              </div>
+
+              <div class="menuBox">
+                <ul>
+                  <li class="prodct"><a href="#">Auction your product</a></li>
+                  <li class="">
+                    <a href="viewauctions.html">View Auctions</a>
+                  </li>
+                  <li><a href="myauction.html">My Auctions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- banner -->
+      <section class="banner">
+        <div class="container">
+          <div class="lt">
+            <h1>Auction what you want, the way you want</h1>
+            <p>
+              DexAuction is a decentralized exchange providing a flexible
+              framework for conducting different formats of auctions in realtime
+              with customizable auctioning parameters.
+            </p>
+
+            <span class="pwd"
+              >Powered by
+              <a href="https://tezos.com/" target="blank">Tezos</a></span
+            >
+
+            <ul>
+              <li>
+                <a href="#" class="butn prodct"
+                  ><span>Auction your product</span></a
+                >
+              </li>
+              <li class="scnd">
+                <a href="viewauctions.html" class="butn"
+                  ><span>View Auctions</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="rt">
+            <img src="/images/banner.svg" alt="welcome-banner" />
+          </div>
+        </div>
+      </section>
+      <!-- banner -->
+
+      <!-- trading -->
+      <section class="trading">
+        <div class="container">
+          <div class="oneLine">
+            <p>
+              An auction is an economic mechanism whose purpose is the purchase,
+              sale, or allocation of goods and the formation of prices for those
+              goods via some competitive process like bidding. There are the
+              four major types of auctions:
+            </p>
+          </div>
+
+          <div class="tradingBox moveUp">
+            <ul>
+              <li>
+                <div class="insdTarde">
+                  <h2>English Auction</h2>
+                  <p>
+                    An ascending price auction where the bid price keeps
+                    increasing starting from a reserve price till no bidder can
+                    match the highest standing bid.
+                  </p>
+                  <img src="/images/trade1.svg" alt="english-auction-img" />
+                </div>
+              </li>
+
+              <li>
+                <div class="insdTarde">
+                  <h2>Dutch Auction</h2>
+                  <p>
+                    A descending price auction where the auctioneer begins with
+                    a high asking price. The price decreases until one bidder is
+                    willing to pay the quoted price.
+                  </p>
+                  <img src="/images/trade2.svg" alt="dutch-auction-img" />
+                </div>
+              </li>
+
+              <li>
+                <div class="insdTarde">
+                  <h2>Sealed Bid</h2>
+                  <p>
+                    A sealed bid first price auction is where bidders submit
+                    sealed bids and the highest bidder wins and pays his bid.
+                  </p>
+                  <img src="/images/trade3.svg" alt="sealed-bid-img" />
+                </div>
+              </li>
+
+              <li>
+                <div class="insdTarde">
+                  <h2>Vickrey</h2>
+                  <p>
+                    Vickrey is a sealed bid second price auction where bidders
+                    submit sealed bids and the highest bidder wins and pays the
+                    amount of the second highest bid.
+                  </p>
+                  <img src="/images/trade4.svg" alt="vickrey-img" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- trading -->
+
+      <!-- why use auction -->
+      <section class="why moveUp">
+        <div class="container">
+          <h2>What blockchain gives?</h2>
+
+          <ul>
+            <li>
+              <div class="item">
+                <img src="/images/yes.svg" alt="transparency-img" />
+                <h3>Transparency</h3>
+                <p>
+                  An online auction without central intermediaries conducted
+                  over smart contracts using blockchain's immutable
+                  tamper-resistane ledger makes the auctioning processes
+                  transparent.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="item">
+                <img src="/images/Secure.svg" alt="secure-img" />
+                <h3>Security</h3>
+                <p>
+                  Using audited and tested smart contracts based on Michelson
+                  (which facilitates formal verification) makes the entire
+                  platform foolproof and secure, so that malicious and selfish
+                  peers cannot cheat.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="item">
+                <img src="/images/calendar.svg" alt="speed-img" />
+                <h3>Speed</h3>
+                <p>
+                  Because of the high throughput provided by the Tezos
+                  blockchain, auctions can be created, customised, and executed
+                  in a jiffy.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="item">
+                <img src="/images/ok.svg" alt="cost-efficiency-img" />
+                <h3>Cost efficiency</h3>
+                <p>
+                  By eliminating the need for central intermediaries to conduct
+                  and manage the auctions, it lowers the cost of auctioning and
+                  enables fair price development.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- why use auction -->
+
+      <%= require('html-loader!../partials/footer.html') %>
+    </div>
+    <!-- wrp -->
+
+    <script src="/script/jquery.min.js"></script>
+    <script src="/script/bootstrap.min.js"></script>
+    <script src="/script/animations.js"></script>
+    <script src="/script/jquery-ui.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="/script/materialize.min.js"></script>
+    <script src="script/jquery.slimscroll.js"></script>
+    <script src="/script/lottie-player.js"></script>
+    <script src="/script/custom.js"></script>
+  </body>
+</html>
