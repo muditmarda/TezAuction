@@ -1,5 +1,7 @@
 const axios = require("axios").default;
 
+const { config } = require("../config");
+
 // // Better Call Dev
 const BASE_URL = "https://api.better-call.dev/v1";
 const NETWORK = "carthagenet";
@@ -37,7 +39,7 @@ export async function getOpByHashTzkt(hash) {
 }
 
 // Backend URL
-const BACKEND_BASE_URL = "http://54.172.0.221:8080";
+const { BACKEND_BASE_URL } = config;
 
 export async function getAuctions() {
   const api = axios.create({

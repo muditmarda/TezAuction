@@ -21,7 +21,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="logo">
                 <a href="/">
-                  <img src="/images/logo.svg" alt="logo" />
+                  <img src="/images/logo.png" alt="logo" />
                 </a>
               </div>
 
@@ -40,10 +40,10 @@
                   <li id="prodct" class="">
                     <a href="#">Auction your product</a>
                   </li>
-                  <li class="active">
+                  <li class="">
                     <a href="viewauctions.html">View Auctions</a>
                   </li>
-                  <li><a href="#">My Auction</a></li>
+                  <li class="active"><a href="#">My Auction</a></li>
                 </ul>
               </div>
             </div>
@@ -81,9 +81,21 @@
               <span class="sw-rt">Seller</span>
               <div class="plate">
                 <i></i>
-                <a href="javascript:void(0)" id="buyr"></a>
-                <a href="javascript:void(0)" id="allFiltr"></a>
-                <a href="javascript:void(0)" id="sellr"></a>
+                <a
+                  href="javascript:void(0)"
+                  id="buyr"
+                  onclick="relookAuctions('buyer')"
+                ></a>
+                <a
+                  href="javascript:void(0)"
+                  id="allFiltr"
+                  onclick="relookAuctions('all')"
+                ></a>
+                <a
+                  href="javascript:void(0)"
+                  id="sellr"
+                  onclick="relookAuctions('seller')"
+                ></a>
               </div>
             </div>
           </div>
@@ -106,60 +118,132 @@
       </section>
       <!-- cardBox -->
 
-      <div class="comnPopup">
-        <!-- timer -->
+      <div class="trackingPopup">
+        <!-- track info -->
         <div class="countDown">
-          <h2>Time Left</h2>
+          <h2>Tracking Info</h2>
 
-          <div id="timer">
-            <div id="hours"></div>
-            <div id="minutes"></div>
-            <div id="seconds"></div>
+          <br />
+
+          <h4>Shipment tracking id is:</h4>
+          <div
+            style="
+              font-size: 20px;
+              font-weight: 300;
+              color: #707070;
+              line-height: 54px;
+              display: block;
+              border: 0;
+              width: 100%;
+              text-align: center;
+            "
+          >
+            <input
+              type="textbox"
+              id="track-id"
+              value="A4H896FT"
+              style="border: 0px; text-align: center"
+              readonly
+            />
           </div>
 
-          <h3>Bid Amount</h3>
+          <br />
 
-          <h4>Tezos Balance</h4>
-          <div class="blnc">
-            <span>10,00,000</span>
-          </div>
-
-          <button type="button" class="bidDone">Bid Now</button>
+          <button type="button" class="trackDone">Track Now</button>
         </div>
-        <!-- timer -->
+        <!-- track info -->
+
+        <!-- tracking done -->
+        <div class="finisfTrack">
+          <h4>Shipment with tracking id:</h4>
+          <h4><b>A4H896FT</b> is</h4>
+
+          <lottie-player
+            class="sending"
+            src="/script/Paperplane.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 200px"
+            loop
+            autoplay
+          ></lottie-player>
+
+          <lottie-player
+            class="sending2"
+            src="/script/Tick.json"
+            background="transparent"
+            speed="1"
+            style="width: 150px; height: 150px; margin-left: 85px"
+            loop
+            autoplay
+          ></lottie-player>
+
+          <div
+            class="blnc"
+            id="track-status"
+            style="height: 150px; font-size: 25px"
+          >
+            IN TRANSIT
+          </div>
+
+          <br />
+          <span id="track-text"
+            >The funds are safe in the contract. Check back later.</span
+          >
+          <br />
+          <br />
+
+          <button type="button" class="trackClose">Done</button>
+        </div>
+        <!-- tracking done -->
+      </div>
+
+      <div class="comnPopup">
+        <!-- ship info -->
+        <div class="countDown">
+          <h2>Shipping Info</h2>
+
+          <h4>Enter tracking id in the box below:</h4>
+          <div class="blnc">
+            <input type="text" id="shipment-id" value="A4H896FT" />
+          </div>
+
+          <button type="button" class="shipDone">Ship Now</button>
+        </div>
+        <!-- ship info -->
 
         <!-- Good luck -->
         <div class="gudlk">
           <lottie-player
             class="sending"
-            src="script/Paperplane.json"
+            src="/script/Paperplane.json"
             background="transparent"
             speed="1"
-            style="width: 300px; height: 300px;"
+            style="width: 300px; height: 300px"
             loop
             autoplay
           ></lottie-player>
 
           <h2>Good Luck!</h2>
-          <h3>Placing your bid to the cloud</h3>
+          <h3>Placing your shipping ID to the cloud</h3>
         </div>
         <!-- Good luck -->
 
-        <!-- bid done -->
+        <!-- shipping done -->
         <div class="finisfBid">
           <lottie-player
             class="sending"
-            src="script/Tick.json"
+            src="/script/Tick.json"
             background="transparent"
             speed="1"
-            style="width: 150px; height: 150px;"
+            style="width: 150px; height: 150px"
             loop
             autoplay
           ></lottie-player>
 
           <button>Done</button>
         </div>
-        <!-- bid done -->
+        <!-- shipping done -->
       </div>
     </div>
 

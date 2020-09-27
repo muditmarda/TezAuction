@@ -502,7 +502,7 @@ async function submitForm() {
     $.ajax({
       type: "POST",
       enctype: "multipart/form-data",
-      url: "http://54.172.0.221:8080/update-auction-details",
+      url: "http://52.66.226.201:8080/update-auction-details",
       data: data,
       processData: false,
       contentType: false,

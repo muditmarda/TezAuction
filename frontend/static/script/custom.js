@@ -296,11 +296,7 @@ $(document).ready(function () {
     makeTimer();
   }, 1000);
 
-  $(".auctioBid").on("click", function () {
-    $("body").addClass("bidding");
-  });
-
-  $(".bidDone").on("click", function () {
+  $(".shipDone").on("click", function () {
     $("body").addClass("gudLuck");
     setTimeout(() => {
       $("body").addClass("biddingDone");
@@ -344,5 +340,4 @@ $(document).ready(function () {
     $(".switchBtn span").removeClass("active");
     $(".switchBtn span.sw-lt").addClass("active");
   });
-
 });

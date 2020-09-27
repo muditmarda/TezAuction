@@ -12,7 +12,7 @@ import { connectWallet, checkAvailability, checkAndSetKeys } from "../common";
 import {
   getEnglishAuctionTemplate,
   getDutchAuctionTemplate,
-} from "./templates";
+} from "../page-auction/templates";
 
 /**
  * ---------------------------
@@ -166,6 +166,22 @@ window.reconfigureAuction = async function (address, id) {
 
 window.onClickConfigureAuction = onClickConfigureAuction;
 
+window.relookAuctions = function (role) {
+  $("#upcoming-list").html("");
+  $("#ongoing-list").html("");
+  $("#completed-list").html("");
+
+  ongoingAuctionsCount = 0;
+  upcomingAuctionsCount = 0;
+  completedAuctionsCount = 0;
+
+  $("#upcoming-count").html(upcomingAuctionsCount);
+  $("#ongoing-count").html(ongoingAuctionsCount);
+  $("#completed-count").html(completedAuctionsCount);
+
+  updateAuctionData(role);
+};
+
 $("#prodct").on("click", onClickConfigureAuction);
 
 window.onClickConfigureShip = function onClickConfigureShip(id) {
@@ -288,16 +304,39 @@ $(document).ready(async function () {
 
 let upcomingAuctionsCount = 0,
   ongoingAuctionsCount = 0,
-  completedAuctionsCount = 0;
+  completedAuctionsCount = 0,
+  auctions;
 
-async function updateAuctionData() {
+async function updateAuctionData(role = "all") {
   upcomingAuctionsCount = 0;
   ongoingAuctionsCount = 0;
   completedAuctionsCount = 0;
 
-  const auctions = await getAuctions();
+  if (auctions === undefined || auctions === null) {
+    auctions = await getAuctions();
+  }
 
   for (let i = 0; i < auctions.length; i++) {
+    console.log("Buyer: ", auctions[i].buyer);
+    console.log("Seller: ", auctions[i].seller);
+
+    switch (role) {
+      case "buyer":
+        if (auctions[i].buyer != walletAddress) continue;
+        break;
+      case "seller":
+        if (auctions[i].seller != walletAddress) continue;
+        break;
+      case "all":
+      default:
+        if (
+          auctions[i].seller != walletAddress &&
+          auctions[i].buyer != walletAddress
+        )
+          continue;
+        break;
+    }
+
     populateAuctions(auctions[i], i);
   }
 
